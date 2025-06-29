@@ -33,12 +33,11 @@ hr_directory/
 ```
 
 ## Running The Project Set Up
-
+```bash
 # Clone repo
 git clone https://github.com/duggiralasravan/hr-directory-api
 cd hr-directory-api
 
-```bash
 # Run locally
 uvicorn app.main:app --reload
 
