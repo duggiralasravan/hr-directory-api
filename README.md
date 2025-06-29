@@ -51,3 +51,20 @@ docker run -p 8000:8000 hr-api
 ```bash
 python seed.py
 ```
+
+## Running Test Cases
+Option 1: Run with unittest (built-in, recommended since you're restricted to standard libraries)
+
+```bash
+python -m unittest discover -s tests
+```
+Option 2: Run a single test file manually
+
+```bash
+python tests/test_search_api.py
+```
+
+Option 3: Run inside Docker container
+```bash
+docker exec -it <container_name_or_id> python -m unittest discover -s tests
+```
