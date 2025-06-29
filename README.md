@@ -30,7 +30,7 @@ hr_directory/
 ├── requirements.txt
 ├── README.md
 └── openapi.json
-'''
+```
 
 ## Running The Project Set Up
 
