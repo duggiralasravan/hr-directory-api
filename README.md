@@ -12,17 +12,39 @@ A simple FastAPI microservice to search employees with dynamic column configurat
 - OpenAPI compliant
 - Unit tested
 
-## Running
+## Project Structure
+hr_directory/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── db.py
+│   ├── crud.py
+│   ├── rate_limiter.py
+│   └── config.py
+├── tests/
+│   └── test_search_api.py
+├── Dockerfile
+├── requirements.txt
+├── README.md
+└── openapi.json
+
+
+## Running The Project Set Up
+
+# Clone repo
+git clone https://github.com/duggiralasravan/hr-directory-api
+cd hr-directory-api
 
 ```bash
-# Local
+# Run locally
 uvicorn app.main:app --reload
 
-# Docker
+# OR with Docker
 docker build -t hr-api .
 docker run -p 8000:8000 hr-api
 ```
-
 
 ## Seeding the DB
 
