@@ -13,6 +13,7 @@ A simple FastAPI microservice to search employees with dynamic column configurat
 - Unit tested
 
 ## Project Structure
+```shell
 hr_directory/
 ├── app/
 │   ├── __init__.py
@@ -29,7 +30,7 @@ hr_directory/
 ├── requirements.txt
 ├── README.md
 └── openapi.json
-
+'''
 
 ## Running The Project Set Up
 
