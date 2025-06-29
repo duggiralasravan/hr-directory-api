@@ -3,10 +3,12 @@ from .schemas import SearchQuery
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///./test.db", connect_args={"check_same_thread": False})
-SessionLocal = sessionmaker(bind=engine)
+
 
 def search_employees(params: SearchQuery):
+    engine = create_engine(f"sqlite:///./shards/shard_{params.organization_id % 2}.db", connect_args={"check_same_thread": False})
+    SessionLocal = sessionmaker(bind=engine)
+
     session = SessionLocal()
     query = session.query(Employee).filter(Employee.organization_id == params.organization_id)
 
