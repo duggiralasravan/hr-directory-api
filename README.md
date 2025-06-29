@@ -1,4 +1,4 @@
-[![CI](https://github.com/yourusername/hr-directory-api/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/hr-directory-api/actions)
+[![CI](https://github.com/duggiralasravan/hr-directory-api/actions/workflows/ci.yml/badge.svg)](https://github.com/duggiralasravan/hr-directory-api/actions)
 
 # HR Directory API
 
